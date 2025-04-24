@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  max-width: 1200px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Navbar */
+.navbar {
+  background-color: #0e3c66;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-links span {
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.actions .enrol-button {
+  background: white;
+  color: #0e3c66;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+
+.search-icon {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background: #f2f1f1;
+  gap: 2rem;
+  flex-wrap: wrap;
+  /* max-width: 1000px;
+  position: relative;
+  margin: auto; */
+}
+
+.hero-text {
+  flex: 1 1 50%;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.know-more {
+  background-color: #0e3c66;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hero-image {
+  flex: 1 1 40%;
+  min-height: 250px;
+  background: url('/public/slide3.jpg') no-repeat center;
+  background-size: contain;
+}
+
+/* Examinations Section */
+.exams {
+  padding: 2rem;
+}
+
+.exams h2 {
+  font-size: 1.6rem;
+  color: #0e3c66;
+}
+
+.exam-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.exam-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 1 30%;
+  background: #f0f4f8;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+/* Cards Grid Section */
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.info-card {
+  flex: 1 1 calc(25% - 1rem);
+  background-color: #0e3c66;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .exam-cards {
+    flex-direction: column;
+  }
+
+  .exam-card {
+    flex: 1 1 100%;
+  }
+
+  .cards-grid {
+    flex-direction: column;
+  }
+
+  .info-card {
+    flex: 1 1 100%;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: flex-end;
   }
 }
