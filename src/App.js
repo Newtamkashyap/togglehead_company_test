@@ -31,7 +31,6 @@ function App() {
         <div className="hero-image">
       
         </div>
-        
       </section>
 
       <section className="exams">
