@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/togglehead_company_test/static/css/main.f6de7de9.css",
+    "main.js": "/togglehead_company_test/static/js/main.e5655526.js",
+    "static/js/453.3d9cd753.chunk.js": "/togglehead_company_test/static/js/453.3d9cd753.chunk.js",
+    "static/media/slide3.jpg": "/togglehead_company_test/static/media/slide3.07a471334c6e917b6439.jpg",
+    "index.html": "/togglehead_company_test/index.html",
+    "main.f6de7de9.css.map": "/togglehead_company_test/static/css/main.f6de7de9.css.map",
+    "main.e5655526.js.map": "/togglehead_company_test/static/js/main.e5655526.js.map",
+    "453.3d9cd753.chunk.js.map": "/togglehead_company_test/static/js/453.3d9cd753.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6de7de9.css",
+    "static/js/main.e5655526.js"
+  ]
+}
